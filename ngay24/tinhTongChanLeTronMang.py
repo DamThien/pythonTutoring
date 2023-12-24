@@ -2,6 +2,14 @@ def nhapMang():
     doDaiMang = int(input('Nhap do dai cua mang: '))
     mangSo = []
     for i in range(doDaiMang):
+        phantu = input("Nhap so thu " + str(i + 1) + ": ")
+        mangSo.append(int(phantu))
+        return mangSo
+
+def nhapMangXetKieuBien():
+    doDaiMang = int(input('Nhap do dai cua mang: '))
+    mangSo = []
+    for i in range(doDaiMang):
         while True:
             try:
                 phantu = int(input("Nhap so thu " + str(i + 1) + ": "))
